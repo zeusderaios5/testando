@@ -1,0 +1,13 @@
+<script>
+    var formData = new FormData();
+    formData.append("a", "USER bob");
+
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://www1.ufrgs.br/VinculosPessoa/vinculos2.php");
+    xhr.send(formData);
+
+    setTimeout(function() {
+        window.location = "https://www1.ufrgs.br/VinculosPessoa/vinculos2.php";
+    }, 5000);
+</script>
